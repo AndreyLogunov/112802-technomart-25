@@ -1,5 +1,12 @@
 /* Стилизация главной */
 
+/* html { 
+	box-sizing: border-box; 
+}
+*, *::before, *::after {
+	box-sizing: inherit; 
+} */
+
 body {
 	margin: 0;
 	padding: 0;
@@ -15,16 +22,30 @@ a {
 	text-decoration: none;
 }
 
-.header-top {
+/* Шапка */
+
+/* Первая часть шапки */
+
+.main-header .container {
+	width: 100%;
 	background-color: #293449;
 }
 
+.header-top {
+	width: 960px;
+	background-color: #293449;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+
 .main-header-logo {
-	display: inline-block;
+	display:block;
 	width: 220px;
 	height: 42px;
 	background-color: #ee3643;
 	border-bottom: 5px solid #b52933;
+	margin-left: 10px;
 }
 
 .main-header-logo:hover,
@@ -47,6 +68,10 @@ a {
 .search button {
 	border: none;
 	background-color: #293449;
+	width: 17px;
+	height: 17px;
+	padding: 0;
+	margin-left: 20px;
 }
 
 .search button:hover,
@@ -64,11 +89,16 @@ a {
 }
 
 .search input[type="text"] {
-	font: inherit;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 18px;
 	color: #fff;
 
 	border: none;
 	background-color: #293449;
+	margin-left: 10px;
+	width: 220px;
 }
 
 .search input[type="text"]:hover,
@@ -84,8 +114,8 @@ a {
 
 .bookmarks:hover,
 .bookmarks:focus,
-.basket a:hover,
-.basket a:focus {
+.basket:hover,
+.basket:focus {
 	background-color: #212a3a;
 }
 
@@ -97,6 +127,11 @@ a {
 	width: 14px;
 	height: 16px;
 	opacity: 0.3;
+	margin-left: 17px;
+}
+
+.bookmarks a {
+	margin-left: 12px;
 }
 
 .bookmarks:hover::before,
@@ -112,6 +147,11 @@ a {
 	width: 15px;
 	height: 15px;
 	opacity: 0.3;
+	margin-left: 46px;
+}
+
+.basket a {
+	margin-left: 17px;
 }
 
 .basket:hover::before,
@@ -126,6 +166,7 @@ a {
 	height: 32px;
 	text-align: center;
 	padding-top: 10px;
+	margin-left: 31px;
 }
 
 .order a:hover,
@@ -138,12 +179,23 @@ a {
 	opacity: 0.5;
 }
 
+/* Вторая часть шапки */
+
+.header-info {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
 
 .main-header p {
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
 	color: #ee3643;
+	width: 197px;
+	margin-left: 63px;
 }
 
 p.header-contacts {
@@ -151,6 +203,9 @@ p.header-contacts {
 	line-height: 24px;
 	font-style: normal;
 	color: #32425c;
+	width: 260px;
+	text-align: center;
+	margin-left: 82px;
 }
 
 .header-contacts a {
@@ -170,6 +225,15 @@ p.header-contacts {
 
 .user-navigation {
 	list-style: none;
+	display: flex;
+}
+
+.user-navigation li:first-child {
+	margin-left: 10px;
+}
+
+.user-navigation li:last-child {
+	margin-left: 61px;
 }
 
 .user-navigation a {
@@ -195,6 +259,7 @@ p.header-contacts {
 	background-repeat: no-repeat;
 	width: 20px;
 	height: 17px;
+	margin-left: 42px;
 }
 
 .user-navigation:hover::before {
@@ -205,12 +270,21 @@ p.header-contacts {
 	background-image: url(../img/icon-login.svg);
 }
 
+/* Третья часть шапки */
+
 .header-navigation {
+	width: 940px;
+	margin: 0 auto;
 	background-color: #32425c;
+	border-bottom: 5px solid #293449;
 }
 
 .site-navigation {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
 }
 
 .site-navigation a {
@@ -219,6 +293,10 @@ p.header-contacts {
 	color: #fff;
 	display: block;
 	background-color: #32425c;
+	width: 100%;
+	padding-top: 19px;
+	height: 36px;
+
 }
 
 .site-navigation a:hover {
@@ -234,11 +312,22 @@ p.header-contacts {
 	opacity: 0.5;
 }
 
+/* Основная часть */
+
+/* Раздел "о нас" */
+
+.about-us {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+}
+
 .about-us h2 {
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
 	color: #000;
+	text-transform: uppercase;
 }
 
 .about-us p {
@@ -247,6 +336,15 @@ p.header-contacts {
 	line-height: 24px;
 	font-weight: 400;
 	color: #000;
+}
+
+.about-company {
+	width: 540px;
+}
+
+.contacts {
+	margin-left: 100px;
+	width: 300px;
 }
 
 .about-company ul {
@@ -275,8 +373,42 @@ p.header-contacts {
 	background-color: #ba2732;
 }
 
-.footer-navigation {
+/*Стилизация подвала*/
+
+/* Первая часть подвала */
+
+.container-footer-navigation {
 	background-color: #32425c;
+	width: 100%;
+}
+
+.footer-navigation {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-navigation-top {
+	display: flex;
+}
+
+.footer-navigation-bottom {
+	display: flex;
+}
+
+.site-footer-navigation {
+	margin-left: 120px;
+	width: 550px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.products-footer-navigation {
+	margin-left: 50px;
+	width: 525px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .main-footer-logo {
@@ -336,8 +468,32 @@ p.header-contacts {
 	opacity: 0.5;
 }
 
-.footer-contacts {
+/* Вторая часть подвала */
+
+.container-footer-contacts {
+	margin-top: -16px;
 	background-color: #293449;
+	width: 100%;
+}
+
+.footer-contacts {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.copyright{
+	width: 230px;
+}
+
+.feedback {
+	margin-left: 112px;
+	width: 140px;
+}
+
+.developer {
+	margin-left: 49px;
+	width: 97px;
 }
 
 .footer-contacts p {
@@ -357,6 +513,15 @@ p.header-contacts {
 .footer-contacts a:active {
 	text-decoration: none;
 	color:#ee3643;
+}
+
+.social {
+	margin-left: 118px;
+}
+
+.social-items {
+	display: flex;
+	width: 133px;
 }
 
 .social ul {
@@ -434,6 +599,8 @@ p.header-contacts {
 }
 
 .modal-write-us {
+	width: 620px;
+	margin: 0 auto;
 	line-height: 18px;
 	color: #000;
 
