@@ -1,11 +1,11 @@
 /* Стилизация главной */
 
-/* html { 
+html { 
 	box-sizing: border-box; 
 }
 *, *::before, *::after {
 	box-sizing: inherit; 
-} */
+}
 
 body {
 	margin: 0;
@@ -42,10 +42,11 @@ a {
 .main-header-logo {
 	display:block;
 	width: 220px;
-	height: 42px;
 	background-color: #ee3643;
 	border-bottom: 5px solid #b52933;
 	margin-left: 10px;
+	padding: 10.5px 0;
+	position: absolute;
 }
 
 .main-header-logo:hover,
@@ -62,7 +63,6 @@ a {
 .main-header-logo img {
 	display: block;
 	margin: 0 auto;
-	margin-top: 10.5px;
 }
 
 .search button {
@@ -71,7 +71,7 @@ a {
 	width: 17px;
 	height: 17px;
 	padding: 0;
-	margin-left: 20px;
+	margin-left: 250px;
 }
 
 .search button:hover,
@@ -127,7 +127,11 @@ a {
 	width: 14px;
 	height: 16px;
 	opacity: 0.3;
-	margin-left: 17px;
+	margin-left: 11px;
+}
+
+div.bookmarks {
+	padding: 9px 29px 9px 8px;
 }
 
 .bookmarks a {
@@ -147,11 +151,16 @@ a {
 	width: 15px;
 	height: 15px;
 	opacity: 0.3;
-	margin-left: 46px;
+	margin-left: px;
+}
+
+div.basket {
+	padding: 9px 0 9px 27px;
 }
 
 .basket a {
 	margin-left: 17px;
+	margin-right: 27px;
 }
 
 .basket:hover::before,
@@ -160,13 +169,14 @@ a {
 }
 
 .order a{
+	font-size: 17px;
+	line-height: 18px;
 	display: inline-block;
 	background-color: #63a63e;
-	width: 150px;
-	height: 32px;
+	width: 146px;
 	text-align: center;
-	padding-top: 10px;
-	margin-left: 31px;
+	padding: 12px 0;
+	margin-left: px;
 }
 
 .order a:hover,
@@ -186,6 +196,7 @@ a {
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
+	padding: 28.5px 0;
 }
 
 
@@ -293,10 +304,7 @@ p.header-contacts {
 	color: #fff;
 	display: block;
 	background-color: #32425c;
-	width: 100%;
-	padding-top: 19px;
-	height: 36px;
-
+	padding: 19px 30px;
 }
 
 .site-navigation a:hover {
@@ -373,6 +381,16 @@ p.header-contacts {
 	background-color: #ba2732;
 }
 
+.button-about-company {
+	padding: 11px 40px;
+	border-radius: 3px;
+}
+
+.button-contacts {
+	padding: 11px 61.5px;
+	border-radius: 3px;
+}
+
 /*Стилизация подвала*/
 
 /* Первая часть подвала */
@@ -387,6 +405,7 @@ p.header-contacts {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 40px;
 }
 
 .footer-navigation-top {
@@ -395,6 +414,10 @@ p.header-contacts {
 
 .footer-navigation-bottom {
 	display: flex;
+}
+
+.footer-navigation-bottom p {
+	padding-top: 9px;
 }
 
 .site-footer-navigation {
@@ -414,7 +437,7 @@ p.header-contacts {
 .main-footer-logo {
 	display: inline-block;
 	width: 220px;
-	height: 65px;
+	padding: 1.5px 0;
 	background-color: #ee3643;
 	border-bottom: 5px solid #b52933;
 }
@@ -471,7 +494,6 @@ p.header-contacts {
 /* Вторая часть подвала */
 
 .container-footer-contacts {
-	margin-top: -16px;
 	background-color: #293449;
 	width: 100%;
 }
@@ -480,6 +502,7 @@ p.header-contacts {
 	width: 940px;
 	margin: 0 auto;
 	display: flex;
+	padding: 19.5px 0;
 }
 
 .copyright{
@@ -535,27 +558,24 @@ p.header-contacts {
 .social-button-vk {
 	background-color: #212a3a;
 	width: 42px;
-	height: 30px;
+	height: 31px;
 	text-align: center;
-	padding-top: 12px;
 	border-radius: 25px;
 }
 
 .social-button-fb {
 	background-color: #212a3a;
 	width: 42px;
-	height: 31.25px;
+	height: 31px;
 	text-align: center;
-	padding-top: 10.75px;
 	border-radius: 25px;
 }
 
 .social-button-insta {
 	background-color: #212a3a;
 	width: 42px;
-	height: 31.75px;
+	height: 31px;
 	text-align: center;
-	padding-top: 10.25px;
 	border-radius: 25px;
 }
 
@@ -578,6 +598,7 @@ p.header-contacts {
 	background-repeat: no-repeat;
 	width: 26px;
 	height: 15px;
+	margin-top: 8px;
 }
 
 .social-button-fb::before {
@@ -587,6 +608,7 @@ p.header-contacts {
 	background-repeat: no-repeat;
 	width: 12px;
 	height: 22px;
+	margin-top: 4px;
 }
 
 .social-button-insta::before {
@@ -596,6 +618,7 @@ p.header-contacts {
 	background-repeat: no-repeat;
 	width: 21px;
 	height: 21px;
+	margin-top: 4.5px;
 }
 
 .modal-write-us {
@@ -606,6 +629,7 @@ p.header-contacts {
 
 	background-color: #fff;
 	border-top: 7px solid #ff5358;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
 
 .modal-write-us input[type="text"],
@@ -648,6 +672,15 @@ p.header-contacts {
 
 /* Стилизация каталога */
 
+.header-info-catalog {
+	padding: 17px 0;
+}
+
+.catalog {
+	width: 940px;
+	margin: 0 auto;
+}
+
 .catalog h1 {
 	font-size: 30px;
 	line-height: 30px;
@@ -680,6 +713,28 @@ p.header-contacts {
 	display: none;
 }
 
+.container-main {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.filter {
+	width: 160px;
+}
+
+.procreator {
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+}
+
+.power {
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+}
+
 .filter h2 {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 700;
@@ -709,12 +764,48 @@ p.header-contacts {
 	border: none;
 }
 
+.products {
+	margin-left: 80px;
+	width: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: px;
+}
+
+.products-item {
+	width: 220px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-bottom: 21px;
+	border: 1px solid #e5e5e5;
+	z-index: 2;
+	position: relative;
+	background-color: #fff;
+}
+
+.products-item-button {
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.products-item:hover {
+	z-index: 1;
+}
+
+.products-item-button:hover {
+	z-index: 2;
+}
+
 .products-item h3 {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000;
+	width: 157px;
+	margin: 0 auto;
 }
 
 .products-item del {
@@ -723,9 +814,14 @@ p.header-contacts {
 	font-size: 17px;
 	line-height: 18px;
 	color: #999;
+	display: block;
+	width: 157px;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-bottom: 22px;
 }
 
-.products-item a {
+.products-item p {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 700;
 	font-size: 17px;
@@ -733,6 +829,11 @@ p.header-contacts {
 	color: #fff;
 
 	background-color: #ee3643;
+	width: 140px;
+	margin: 0 auto;
+	padding: 8px 0;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
 }
 
 .buy {
@@ -741,10 +842,15 @@ p.header-contacts {
 	line-height: 18px;
 	font-weight: 400;
 	color: #fff;
+	text-transform: uppercase;
 
 	background-color: #63a63e;
 	border: none;
 	border-bottom: 3px solid #367315;
+	width: 135px;
+	padding: 6px 0;
+	border-radius: 3px;
+	margin-top: 43px;
 }
 
 .buy:hover,
@@ -765,6 +871,9 @@ p.header-contacts {
 	width: 15px;
 	height: 15px;
 	opacity: 0.3;
+	left: -20px;
+	top: 1.5px;
+	position: relative;
 }
 
 .buy:hover::before,
@@ -779,9 +888,14 @@ p.header-contacts {
 	line-height: 18px;
 	font-weight: 400;
 	color: #32425c;
+	text-transform: uppercase;
 
 	background-color: #fff;
 	border: 3px solid #63a63e;
+	padding: 7px 0;
+	width: 135px;
+	border-radius: 3px;
+	margin-top: 8px;
 }
 
 .marker:hover,
@@ -793,4 +907,94 @@ p.header-contacts {
 	opacity: 0.3;
 }
 
+h3.marker-margin {
+	margin-top: 53px;
+}
 
+h3.marker-margin-bottom {
+	margin-bottom: 53px;
+}
+
+.container-products-button {
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.products-button {
+	width: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	left: 240px;
+	bottom: 0;
+}
+
+/* Меню личного кабинета */
+
+p.user-menu {
+	width: 300px;
+}
+
+.user-menu b {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000;
+	font-style: normal;
+	font-weight: 400;
+	margin-left: 13px;
+}
+
+.basket-on {
+	background-color: #ee3643;
+}
+
+.login::before {
+	content: "";
+	display: inline-block;
+	background-image: url(../img/icon-user.svg);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 18px;
+	margin-left: 13px;
+}
+
+.login::after {
+	content: "";
+	display: inline-block;
+	background-image: url(../img/icon-logout.svg);
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 17px;
+	margin-left: 38px;
+}
+
+.links {
+	display: flex;
+}
+
+a.my-order,
+a.private-office {
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
+}
+
+.my-order {
+	margin-left: 15px;
+}
+
+.private-office{
+	margin-left: 12px;
+}
+
+.point {
+	display: block;
+	background-color: #32425c;
+	width: 5px;
+	height: 5px;
+	border-radius: 3px;
+	margin-left: 14px;
+	margin-top: 10px;
+}
