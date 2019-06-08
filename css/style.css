@@ -681,6 +681,46 @@ p.header-contacts {
 	margin: 0 auto;
 }
 
+.right::before {
+	content: "";
+	display: inline-block;
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 12px;
+	position: relative;
+	top: 1px;
+	right: 5px;
+}
+
+.right-catalog {
+	position: relative;
+	right: 50px;
+	top: 50px;
+}
+
+.right-tool {
+	position: relative;
+	right: 5px;
+	top: 26px;
+}
+
+.right-tool::before {
+	position: relative;
+	right: 10px;
+}
+
+.right-perforator {
+	position: relative;
+	left: 70px;
+	top: 2px;
+}
+
+.right-perforator::before {
+	position: relative;
+	right: 10px;
+}
+
 .catalog h1 {
 	font-size: 30px;
 	line-height: 30px;
@@ -698,6 +738,7 @@ p.header-contacts {
 	font-size: 13px;
 	line-height: 18px;
 	color: #000;
+	text-transform: uppercase;
 }
 
 .home::before {
@@ -707,6 +748,9 @@ p.header-contacts {
 	background-repeat: no-repeat;
 	width: 15px;
 	height: 12px;
+	position: relative;
+	right: 40px;
+	top: 75px;
 }
 
 .home-none {
@@ -769,7 +813,6 @@ p.header-contacts {
 	width: 700px;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: px;
 }
 
 .products-item {
@@ -782,20 +825,6 @@ p.header-contacts {
 	z-index: 2;
 	position: relative;
 	background-color: #fff;
-}
-
-.products-item-button {
-	position: relative;
-	z-index: 1;
-	background-color: #fff;
-}
-
-.products-item:hover {
-	z-index: 1;
-}
-
-.products-item-button:hover {
-	z-index: 2;
 }
 
 .products-item h3 {
@@ -834,6 +863,19 @@ p.header-contacts {
 	padding: 8px 0;
 	border-top-right-radius: 100px;
 	border-bottom-right-radius: 100px;
+}
+
+.products-item-button {
+	position: absolute;
+	bottom: 198px;
+	left: 25px;
+	width: 170px;
+	background-color: #fff;
+	display: none;
+}
+
+.products-item:hover .products-item-button {
+	display: block;
 }
 
 .buy {
@@ -913,21 +955,6 @@ h3.marker-margin {
 
 h3.marker-margin-bottom {
 	margin-bottom: 53px;
-}
-
-.container-products-button {
-	width: 940px;
-	margin: 0 auto;
-	position: relative;
-}
-
-.products-button {
-	width: 700px;
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	left: 240px;
-	bottom: 0;
 }
 
 /* Меню личного кабинета */
