@@ -16,7 +16,7 @@
 					<img src="img/logo-technomart.svg" width="136.5" height="21.59" alt="Логотип компании Техномарт">
 				</a>
 				<form method="GET" class="search">
-					<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></button>
+					<button type="submit" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></button>
 					<input type="text" placeholder="Поиск:" id="search">
 				</form>
 
@@ -32,7 +32,12 @@
 			<p>Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
 			<p class="header-contacts"><a href="+7 (812) 555-05-55">+7 (812) 555-05-55</a><br> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			<p class="user-menu">
-				<span class="login"><b>Равшан Джамшутович</b></span>
+				<span class="login">
+					<a href="#" class="login-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg></a>
+					<a href="#"><b>Равшан Джамшутович</b></a>
+					<a href="#" class="login-link login-link-off"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+</a>
+				</span>
 				<span class="links">
 					<a href="#" class="my-order">Мои заказы</a>
 					<span class="point"></span>
@@ -66,16 +71,33 @@
 				<section class="filter">
 					<h2>Производители:</h2>
 						<form method="GET" class="procreator">
-							<label><input type="checkbox" checked>Bosch</label>
-							<label><input type="checkbox">Интерскол</label>
-							<label><input type="checkbox" checked>Makita</label>
-							<label><input type="checkbox">Dewalt</label>
-							<label><input type="checkbox">Hitachi</label>
+							<label class="check">
+								<input type="checkbox" checked class="checkbox-content">
+								<span class="checkbox-mark"></span>Bosch
+							</label>
+							<label class="check">
+								<input type="checkbox" class="checkbox-content"><span class="checkbox-mark"></span>Интерскол
+							</label>
+							<label class="check">
+								<input type="checkbox" checked class="checkbox-content"><span class="checkbox-mark"></span>Makita
+							</label>
+							<label class="check">
+								<input type="checkbox" class="checkbox-content"><span class="checkbox-mark"></span>Dewalt
+							</label>
+							<label class="check">
+								<input type="checkbox" class="checkbox-content"><span class="checkbox-mark"></span>Hitachi
+							</label>
 						</form>
 						<h2>Питание:</h2>
 						<form method="GET" class="power">
-							<label><input type="radio" checked>Аккумуляторные</label>
-							<label><input type="radio">Сетевые</label>
+							<label class="radio">
+								<input type="radio" class="radio-input" checked>
+								<span class="radio-mark"></span>Аккумуляторные
+							</label>
+							<label class="radio">
+								<input type="radio" class="radio-input">
+								<span class="radio-mark"></span>Сетевые
+							</label>
 						</form>
 					<button class="show">Показать</button>
 				</section>
@@ -100,7 +122,8 @@
 							<button class="marker">В закладки</button>
 						</div>
 					</div>
-					<div class="products-item">
+					<div class="products-item products-item-right">
+						<div class="flag flag-new">новинка</div>
 						<img src="img/bosch_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
 						<h3 class="marker-margin-bottom">Перфоратор BOSCH BFG 2000</h3>
 						<p>12500 Р.</p>
@@ -120,6 +143,7 @@
 						</div>
 					</div>
 					<div class="products-item">
+						<div class="flag flag-new">новинка</div>
 						<img src="img/bosch_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
 						<h3>Перфоратор BOSCH BFG 6000</h3>
 						<del>30500 Р.</del>
@@ -129,7 +153,7 @@
 							<button class="marker">В закладки</button>
 						</div>
 					</div>
-					<div class="products-item">
+					<div class="products-item products-item-right">
 						<img src="img/bosch_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
 						<h3 class="marker-margin-bottom">Перфоратор BOSCH BFG 2000</h3>
 						<p>12500 Р.</p>
@@ -139,6 +163,7 @@
 						</div>
 					</div>
 					<div class="products-item">
+						<div class="flag flag-new">новинка</div>
 						<img src="img/bosch_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<h3>Перфоратор BOSCH BFG 3000</h3>
 						<del>22500 Р.</del>
@@ -158,7 +183,7 @@
 							<button class="marker">В закладки</button>
 						</div>
 					</div>
-					<div class="products-item">
+					<div class="products-item products-item-right">
 						<img src="img/bosch_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
 						<h3 class="marker-margin-bottom">Перфоратор BOSCH BFG 2000</h3>
 						<p>12500 Р.</p>
@@ -221,10 +246,12 @@
 
 
 	<section class="modal modal-basket">
-		<b>Товар добавлен в корзину!</b>
+		<button type="button" class="modal-close" aria-label="close"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
+		<div class="modal-basket-ok">
+			<b>Товар добавлен в корзину!</b>
+		</div>
 		<a href="#">Оформить заказ</a>
-		<button>Продолжить покупки</button>
-		<span>x</span>
+		<button class="modal-basket-buy">Продолжить покупки</button>
 	</section>
 </body>
 </html>
