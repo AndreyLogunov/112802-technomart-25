@@ -682,6 +682,11 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.slider-inner {
+  background-color: #89776b;
+  height: 266px;
+}
+
 .slider-item h3,
 .slider-item p,
 .slider-item .btn,
@@ -1474,7 +1479,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-title {
-  margin: 0 0 10px;
+  margin: 13.5px 0 10px 0;
   padding: 0 25px;
   font-size: 18px;
   line-height: 20px;
